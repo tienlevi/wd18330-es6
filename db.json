@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Giày Adidas",
+      "price": 20,
+      "category": "Giày",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ-fDXSU4faVQ9TNegbItvTtiFZFGUy3bZmskF5vNhD_KdSQKu5SD6iqA2cFTPGFqlKwar_ISvr0OgImriX1dxsRF4G9LnyeomR0YN5z9EyM_ep5pC7DHcHZ0fwBcK6PpzB5bfGPjOEwwE&usqp=CAc",
+      "description": "DDna phuong Ha Noi"
+    },
+    {
+      "id": "3",
+      "name": "Thái quỳnhaaaaa",
+      "price": "100000213",
+      "category": "Áo",
+      "image": "https://yt3.ggpht.com/V7mD1wE1kHczwdaUomsotu8OE5xm38CQ4o1RSZbXa5hJsfmpQwLU6895pVYBM_Cf92pj0l0aTw=s88-c-k-c0x00ffffff-no-nd-rj",
+      "description": "ab"
+    },
+    {
+      "id": "83b5",
+      "name": "m4a1",
+      "price": "11111",
+      "category": "Áo",
+      "image": "https://yt3.ggpht.com/ytc/AIf8zZRhv8RHY1-vNwSi0ROpsCR2_vXqlQItYWOYThJVgA=s88-c-k-c0x00ffffff-no-rj",
+      "description": "a"
+    },
+    {
+      "id": "14c4",
+      "name": "Ví da",
+      "price": "300000",
+      "category": "Áo",
+      "image": "data:image/webp;base64,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",
+      "description": "ví chuyên dụng"
+    },
+    {
+      "id": "efbf",
+      "name": "Quần bò",
+      "price": "100000",
+      "category": "Quần",
+      "image": "data:image/webp;base64,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",
+      "description": "aaaaaaaaaaaaaa"
+    },
+    {
+      "id": "d6d5",
+      "name": "acc",
+      "price": "3444444",
+      "category": "Quần",
+      "image": "https://yt3.ggpht.com/ytc/AIf8zZRF_47vMOg9cKJrcXIqi4OUHvB25KzFebQNALkM8g=s88-c-k-c0x00ffffff-no-rj",
+      "description": "phan huy hoafng"
+    },
+    {
+      "id": "d6d5",
+      "name": "awdawdadwadwd",
+      "price": "3444444",
+      "category": "Quần",
+      "image": "https://yt3.ggpht.com/ytc/AIf8zZRF_47vMOg9cKJrcXIqi4OUHvB25KzFebQNALkM8g=s88-c-k-c0x00ffffff-no-rj",
+      "description": "phan huy hoafng"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "username": "tienmuller",
+      "password": "tienmuller",
+      "age": "20",
+      "address": "Đan Phượng Hà Nội",
+      "phone": "098931211"
+    },
+    {
+      "id": "2",
+      "username": "klose",
+      "password": "klose",
+      "age": "20",
+      "address": "Đan Phượng Hà Nội",
+      "phone": "098931211"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Quần"
+    },
+    {
+      "id": "2",
+      "name": "Áo"
+    },
+    {
+      "id": "3",
+      "name": "Giày"
+    }
+  ]
+}
