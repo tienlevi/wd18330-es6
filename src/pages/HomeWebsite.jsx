@@ -3,9 +3,13 @@ import HeaderWebsite from "../components/HeaderWebsite";
 import FooterWebsite from "../components/FooterWebsite";
 import { getProducts } from "../api/product";
 import { Link } from "react-router-dom";
+import AddToCart from "../components/AddToCart";
+import { ToastContainer, toast } from "react-toastify";
 
 function Home() {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
+
   useEffect(() => {
     const getData = async () => {
       try {
@@ -17,9 +21,38 @@ function Home() {
     };
     getData();
   }, []);
+
+  useEffect(() => {
+    const value = localStorage.getItem("cart");
+    value && setCart(JSON.parse(value));
+  }, []);
+
+  const handleAddToCart = (pro) => {
+    const add = {
+      id: pro.id,
+      name: pro.name,
+      price: pro.price,
+      category: pro.category,
+      image: pro.image,
+      description: pro.description,
+    };
+    const exitProduct = cart.find((item) => item.id === pro.id);
+    if (exitProduct) {
+      toast.warning("Bạn đã thêm sản phẩm này rồi");
+      return false;
+    } else {
+      setCart(() => {
+        const list = [...cart, add];
+        localStorage.setItem("cart", JSON.stringify(list));
+        return list;
+      });
+      toast.success("Thêm giỏ hàng thành công");
+    }
+  };
   return (
     <>
       <HeaderWebsite />
+      <ToastContainer />
       <div className="flex flex-col min-h-screen">
         <main className="flex-1 bg-gray-100 p-6">
           <img
@@ -50,6 +83,15 @@ function Home() {
                   >
                     Chi tiết sản phẩm
                   </Link>
+                  <AddToCart
+                    id={item.id}
+                    name={item.name}
+                    price={item.price}
+                    category={item.category}
+                    image={item.image}
+                    description={item.description}
+                    handleAdd={handleAddToCart}
+                  />
                 </div>
               ))}
             </div>

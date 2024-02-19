@@ -23,7 +23,7 @@ function AddToCart({
     <>
       <button
         onClick={addToCart}
-        className="p-4 flex justify-center bg-black text-white rounded text-center"
+        className="p-4 w-full mt-3 flex justify-center bg-black text-white rounded text-center"
       >
         Thêm giỏ hàng
       </button>
