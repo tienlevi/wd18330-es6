@@ -2,6 +2,7 @@ import HomeWebsite from "./pages/HomeWebsite";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductsPage from "./pages/ProductsPage";
 import About from "./pages/About";
+import Cart from "./pages/Cart";
 import HomeAdmin from "./pages/admin/Home";
 import AddPage from "./pages/admin/AddPage";
 import EditPage from "./pages/admin/EditPage";
@@ -10,7 +11,6 @@ import Profile from "./pages/user/Profile";
 import Update from "./pages/user/Update";
 import SearchPage from "./pages/SearchPage";
 import Category from "./pages/Category";
-import Login from "./pages/Login";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Route path="/" element={<HomeWebsite />} />
       <Route path="/about" element={<About />} />
       <Route path="/product" element={<ProductsPage />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/category" element={<Category />} />
       <Route path="/product-detail/:id" element={<ProductDetailPage />} />

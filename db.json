@@ -47,14 +47,6 @@
       "category": "Quần",
       "image": "https://yt3.ggpht.com/ytc/AIf8zZRF_47vMOg9cKJrcXIqi4OUHvB25KzFebQNALkM8g=s88-c-k-c0x00ffffff-no-rj",
       "description": "phan huy hoafng"
-    },
-    {
-      "id": "d6d5",
-      "name": "awdawdadwadwd",
-      "price": "3444444",
-      "category": "Quần",
-      "image": "https://yt3.ggpht.com/ytc/AIf8zZRF_47vMOg9cKJrcXIqi4OUHvB25KzFebQNALkM8g=s88-c-k-c0x00ffffff-no-rj",
-      "description": "phan huy hoafng"
     }
   ],
   "profile": [
@@ -62,14 +54,6 @@
       "id": "1",
       "username": "tienmuller",
       "password": "tienmuller",
-      "age": "20",
-      "address": "Đan Phượng Hà Nội",
-      "phone": "098931211"
-    },
-    {
-      "id": "2",
-      "username": "klose",
-      "password": "klose",
       "age": "20",
       "address": "Đan Phượng Hà Nội",
       "phone": "098931211"

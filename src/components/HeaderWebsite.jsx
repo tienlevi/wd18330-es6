@@ -26,6 +26,9 @@ function HeaderWebsite() {
         <Link to="/about" className="px-2">
           About
         </Link>
+        <Link to="/cart" className="px-2">
+          Giỏ hàng
+        </Link>
       </ul>
       <div
         className="flex items-center"
