@@ -54,12 +54,12 @@ function Home() {
       <HeaderWebsite />
       <ToastContainer />
       <div className="flex flex-col min-h-screen">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDy9BiFLojzOeQX_Dnsld6rs5hk9dMszUhcw&usqp=CAU"
+          alt=""
+          className="w-full h-[400px] object-cover"
+        />
         <main className="flex-1 bg-gray-100 p-6">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDy9BiFLojzOeQX_Dnsld6rs5hk9dMszUhcw&usqp=CAU"
-            alt=""
-            className="w-full h-[400px]"
-          />
           <div className="max-w-[1000px] mx-auto">
             <h1 className="text-[32px] font-bold mt-2 mb-4 text-center">
               Sản phẩm

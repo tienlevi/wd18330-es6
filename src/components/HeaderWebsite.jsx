@@ -11,7 +11,7 @@ function HeaderWebsite() {
   return (
     <header className="flex items-center justify-around bg-gray-800 text-white py-4 px-6">
       <div>
-        <h1 className="text-2xl font-bold">My Website</h1>
+        <h1 className="text-2xl font-bold">ThunMov</h1>
       </div>
       <ul className="flex justify-center">
         <Link to="/" className="px-2">

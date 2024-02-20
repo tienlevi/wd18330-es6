@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function Footer() {
   return (
@@ -31,20 +34,26 @@ function Footer() {
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white aspect-square p-2.5 hover:text-primary duration-150"
-              ></Link>
+                className="rounded-full bg-white text-black aspect-square p-2.5 hover:text-primary duration-150"
+              >
+                <YouTubeIcon />
+              </Link>
               <Link
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white aspect-square p-2.5 hover:text-primary duration-150"
-              ></Link>
+                className="rounded-full bg-white text-black aspect-square p-2.5 hover:text-primary duration-150"
+              >
+                <FacebookIcon />
+              </Link>
               <Link
                 href=""
                 target="  "
                 rel="noopener noreferrer"
-                className="rounded-full bg-white aspect-square p-2.5 hover:text-primary duration-150"
-              ></Link>
+                className="rounded-full bg-white text-black aspect-square p-2.5 hover:text-primary duration-150"
+              >
+                <GitHubIcon />
+              </Link>
             </ul>
           </div>
         </div>

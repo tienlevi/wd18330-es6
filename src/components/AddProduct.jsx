@@ -1,18 +1,38 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import SideBar from "./SideBar";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { getCategories } from "../api/category";
 function AddProduct({ onAdd }) {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const navigate = useNavigate();
   const onSubmit = (data) => {
     onAdd(data);
     toast.success("Them thanh cong");
     navigate("/admin/product");
   };
+
+  const [category, setCategory] = useState([]);
+  console.log(category);
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await getCategories();
+        setCategory(response);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getData();
+  }, []);
 
   return (
     <>
@@ -36,10 +56,13 @@ function AddProduct({ onAdd }) {
             <input
               type="text"
               id="name"
-              {...register("name")}
+              {...register("name", { required: true, minLength: 3 })}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               required
             />
+            {errors.name && errors.name.type == "required" && (
+              <span>Bắt buộc phải nhập</span>
+            )}
           </div>
           <div className="mb-4">
             <label
@@ -63,13 +86,14 @@ function AddProduct({ onAdd }) {
             >
               Danh mục
             </label>
-            <input
-              type="number"
-              id="category"
-              {...register("category")}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              required
-            />
+            <select name="category" id="" {...register("category")}>
+              <option value="0">Chọn</option>
+              {category.map((item, index) => (
+                <option value={item.id} key={index}>
+                  {item.name}
+                </option>
+              ))}
+            </select>
           </div>
           <div className="mb-4">
             <label
